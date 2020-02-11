@@ -1,0 +1,81 @@
+@font-face {
+	font-family: GameOfThornes;
+	src:url("../game-of-thrones/Game\ of\ Thrones.ttf")
+
+}
+body { 
+    background-image: url("../dark_brick_wall/dark_brick_wall/dark_brick_wall.png");
+    font-family: GameOfThornes;		
+    color:white;
+}
+
+.bg-1 { 
+margin-top: 10%;
+    margin-left: 4%;
+    background-color: #10101071;
+    height: 2500px;
+
+}
+
+.cardOne { 
+    display: none;    
+    margin-top:10%;  
+    margin-left: 4%;    
+    background-color: #1010103d;   
+    border-radius: 10px;
+    height: 20rem;
+
+}
+.headerText { 
+
+    margin-bottom: 100px;
+    padding-top: 50px;
+    color:white;
+}
+.texthead {
+    color:white; 
+}
+
+
+@keyframes popup {
+    from {
+        opacity: 0;
+        margin-top:20%;
+
+    }to {
+    opacity: 1;
+    margin-top:10%;
+
+    }
+}
+
+
+@media screen and (min-width:1200px) { 
+    .bg-1 {
+        margin-left: 12%;
+        height: 2700px;
+        margin-bottom: 100px;
+
+    }
+    .cardOne { 
+        cursor: pointer;
+        animation: popup 1.3s;
+        margin-left:6%;
+        
+    }
+
+    .cardOne:hover{ 
+        border:2px solid rgba(105, 42, 0, 0.472);
+      
+        
+    }
+
+    .headerText { 
+       
+        padding-top: 100px;
+        padding-left: 30%;
+        color:white;
+    }
+
+
+}
