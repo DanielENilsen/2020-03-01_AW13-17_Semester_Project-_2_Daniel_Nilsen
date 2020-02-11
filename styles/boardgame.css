@@ -13,8 +13,7 @@ body {
    border: 10px solid rgb(172, 80, 19);
    
    */
-    height:713px;
-    
+    height:713px;    
     width:70rem;
     filter: drop-shadow(0 0 0.55rem rgb(22, 22, 22));
 }
@@ -29,13 +28,18 @@ body {
 
 .round2 {   
  margin-left: 3.4rem;
-position: absolute;  
+ 
 display: flex; 
 }
 
 .round3 {  
+
     float: right;
     margin-right: 11.8rem;      
 
 }
 
+.round4 { 
+margin-left: 35.4rem;
+display: flex; 
+}
