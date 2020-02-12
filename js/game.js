@@ -1,23 +1,27 @@
 
 
+//bordbriks3 = bordOne
+//bordbrikstwo = bordTwo
+//bordbriks = boardThree
 
-var bord = document.getElementById('bordbriks');
+var bord = document.getElementById('bordOne');
 var bord2 = document.getElementById('bordbrikstwo');
-var board3 = document.getElementById('bordbriks3');
-var boardfour = document.getElementById('boardfour');
+var bord3 = document.getElementById('boardthree');
 
-for(var i = 14; i>0;i--)  { 
-    bord.innerHTML += "<div class = 'brick'>"+[i]+"</div>";
+
+for(var i = 13; i>0;i--)  { 
+    bord3.innerHTML += "<div class = 'brick'>"+[i]+"</div>";
+
 }
-for(var c = 11;c < 26; c++) { 
+for(var c = 14;c <= 28; c++) { 
+
     bord2.innerHTML += "<div class = 'brick briks2'>"+[c]+"</div>";
-}
-for(var c = 26;c < 37; c++) { 
-    board3.innerHTML += "<div class = 'brick brick3'>"+[c]+"</div>";
-}
 
-for(var c = 38;c <45; c++) { 
-    boardfour.innerHTML += "<div class = 'brick'>"+[c]+"</div>";
+}
+for(var c = 30;c <= 40; c++) { 
+
+    bord.innerHTML += "<div class = 'brick brick3'>"+[c]+"</div>";
+
 }
 
 
