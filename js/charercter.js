@@ -9,9 +9,12 @@ for (var i = 0; i < charectArray.length; i++) {
 
 }        
     function resu(result) { 
-        document.getElementById('id').innerHTML += "<div class = 'col-11 col-sm-11 col-md-11 col-lg-5 cardOne'><h1>" + result.name + "</h1></div>";
-        displayCard();
-     
+        document.getElementById('id').innerHTML += "<div onclick='person"(+(result.name)+)"' class = 'col-11 col-sm-11 col-md-11 col-lg-5 cardOne'><h1>" + result.name + "</h1> <h4> " + result.gender+ "</h4> <h4> "+ result.titles + "</h4></div>";
+        displayCard();     
+}
+function person(data) { 
+     console.log(data);  
+
 }
 
 
