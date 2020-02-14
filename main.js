@@ -26,6 +26,14 @@ setTimeout(function() {
     }
 },700);
 
+var hello = document.getElementById('ididi');
+var vv = localStorage.getItem('Name')
+var gg = localStorage.getItem('Name2')
+
+hello.innerHTML += vv 
+hello.innerHTML += gg 
+
+
 
 
 
