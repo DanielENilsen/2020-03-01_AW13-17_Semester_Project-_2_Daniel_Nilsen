@@ -13,14 +13,21 @@ for (var i = 0; i < charectArray.length; i++) {
         
         function GetCards() { 
            
-
            
             console.log(this)
             if("Name" in localStorage) { 
                 localStorage.setItem("Name2",this.innerHTML);
 
+
+
             } else { 
                 localStorage.setItem("Name",this.innerHTML);
+            }
+            
+            if("Name" in localStorage && "Name2" in localStorage) {
+                slideToNext();
+                
+
             }
             
             
@@ -58,6 +65,12 @@ async function displayCard ()  {
         }    
     }  
 };
+
+
+async function slideToNext() {   
+
+    document.getElementById('body').style.opacity =  0.08
+}
 
 
 
