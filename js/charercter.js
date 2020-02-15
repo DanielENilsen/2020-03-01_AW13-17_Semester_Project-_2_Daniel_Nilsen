@@ -5,29 +5,19 @@ localStorage.removeItem("Name");
 localStorage.removeItem("Name2");
 for (var i = 0; i < charectArray.length; i++) { 
     fetch("https://anapioficeandfire.com/api/characters/"+charectArray[i]).then(result => result.json()).then((rest) => { 
-        resu(rest);   
-      
+        resu(rest);    
    
-    
         const cards = document.querySelectorAll('.cardOne')
         
-        function GetCards() { 
-           
-           
-            console.log(this)
+        function GetCards() {                      
+       
             if("Name" in localStorage) { 
                 localStorage.setItem("Name2",this.innerHTML);
-
-
-
             } else { 
                 localStorage.setItem("Name",this.innerHTML);
-            }
-            
+            }            
             if("Name" in localStorage && "Name2" in localStorage) {
-                slideToNext();
-                
-
+                slideToNext();             
             }          
             
             
@@ -44,7 +34,7 @@ for (var i = 0; i < charectArray.length; i++) {
     function resu(result) {            
         document.getElementById('id').innerHTML += "<div id ='jee' class = 'col-11 col-sm-11 col-md-11 col-lg-5 cardOne'><h1>" + result.name + "</h1> <h4> " + result.gender+ "</h4> <h4> "+ result.titles + "</h4></div>";
         displayCard(); 
-        my_array.push(result.name);   
+      
     }  
    
 function delay(delay) {
@@ -67,9 +57,10 @@ async function displayCard ()  {
 
 
 async function slideToNext() {   
-
-    document.getElementById('body').style.opacity =  0.08
-}
+    await delay(300);
+    var activate = document.getElementById('body');
+    activate.style.opacity = 0.08;
+}   
 
 
 
