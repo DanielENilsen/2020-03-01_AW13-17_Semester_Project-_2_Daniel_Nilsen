@@ -17,7 +17,11 @@ for (var i = 0; i < charectArray.length; i++) {
                 localStorage.setItem("Name",this.innerHTML);
             }            
             if("Name" in localStorage && "Name2" in localStorage) {
-                slideToNext();             
+                slideToNext();  
+              
+
+
+
             }          
             
             
@@ -60,6 +64,11 @@ async function slideToNext() {
     await delay(300);
     var activate = document.getElementById('body');
     activate.style.opacity = 0.08;
+    var cardOne = localStorage.getItem('Name');
+    var cardTwo = localStorage.getItem('Name2');
+    activate.innerHTML += cardOne;
+    activate.innerHTML +=cardTwo;
+
 }   
 
 
