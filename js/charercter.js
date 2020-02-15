@@ -1,4 +1,4 @@
-var my_array = []
+
 var charectArray = [583,55,30,40,50,88,66,350,150,23];
 
 localStorage.removeItem("Name");
@@ -28,8 +28,7 @@ for (var i = 0; i < charectArray.length; i++) {
                 slideToNext();
                 
 
-            }
-            
+            }          
             
             
 
