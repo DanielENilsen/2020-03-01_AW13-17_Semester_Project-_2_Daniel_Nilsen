@@ -10,7 +10,7 @@ var bord3 = document.getElementById('boardthree');
 
 
 for(var i = 13; i>0;i--)  { 
-    bord3.innerHTML += "<div class = 'brick'>"+[i]+"</div>";
+    bord3.innerHTML += "<div  id = "+[i]+" class = 'brick'>"+[i]+"</div>";
 
 }
 for(var c = 14;c <= 28; c++) { 
@@ -23,6 +23,12 @@ for(var c = 30;c <= 40; c++) {
     bord.innerHTML += "<div class = 'brick brick3'>"+[c]+"</div>";
 
 }
+
+
+document.getElementById(5).innerHTML = "<img src='../playerIcon/iconOne.png'></img>"
+
+
+
 
 
 
