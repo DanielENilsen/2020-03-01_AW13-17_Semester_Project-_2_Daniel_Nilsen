@@ -77,5 +77,10 @@ margin-top: 10%;
         color:white;
     }
 
+    .cardSelected { 
+        margin-top: 10%;
+        margin-left: 20%;
+    }
+
 
 }

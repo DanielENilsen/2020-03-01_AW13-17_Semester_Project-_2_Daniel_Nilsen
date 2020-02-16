@@ -24,9 +24,6 @@ for (var i = 0; i < charectArray.length; i++) {
 
             }          
             
-            
-
-        
         }
         cards.forEach(card => card.addEventListener('click',GetCards));
         
@@ -62,12 +59,15 @@ async function displayCard ()  {
 
 async function slideToNext() {   
     await delay(300);
-    var activate = document.getElementById('body');
-    activate.style.opacity = 0.08;
+    var activate = document.getElementById('bg-1');
+    var selecetcards = document.getElementById('disCards');
+    activate.style.display = "none";
+   
     var cardOne = localStorage.getItem('Name');
     var cardTwo = localStorage.getItem('Name2');
-    activate.innerHTML += cardOne;
-    activate.innerHTML +=cardTwo;
+    
+    selecetcards.innerHTML += "<div class = 'class = 'col-11 col-sm-11 col-md-11 col-lg-5 cardOne'>"+cardOne+"</div>";
+    selecetcards.innerHTML += "<div class = 'class = 'col-11 col-sm-11 col-md-11 col-lg-5 cardOne'>"+cardTwo+"</div>";
 
 }   
 
