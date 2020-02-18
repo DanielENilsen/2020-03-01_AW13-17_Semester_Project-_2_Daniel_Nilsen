@@ -22,7 +22,7 @@ body {
 .brick { 
     color:black;
     border: 1px solid black;  
-    background-color: white;
+    background-color: #671e1e;
     height:  3.3rem;
     width: 3.3rem;
 }
@@ -38,4 +38,14 @@ display: flex;
     margin-right: 11.8rem;      
 
 }
+.dice { 
+    color:black;
+    width: 4rem;
+    height:4rem;
+    background-color: aliceblue;
+    margin-left: 40%;
+    position: absolute;
+    margin-top:15rem;
+}
+
 
