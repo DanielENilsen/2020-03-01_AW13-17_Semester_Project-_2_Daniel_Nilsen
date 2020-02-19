@@ -58,14 +58,16 @@ dice.addEventListener("click",function() {
         document.getElementById(stand).innerHTML = "<img  src='../playerIcon/iconOne.png'></img>";        
       
     } else {
-        alert("Game over Player One ")
+        document.getElementById('bord').style.display = "none";
+
+
     }
 
     if (stand2 < 40) { 
       
     document.getElementById(stand2).innerHTML = "<img src='../playerIcon/player_icon_two.png'></img>";
    } else {
-    alert("Game over player TWo won")
+    document.getElementById('bord').style.display = "none";
     }
 
 

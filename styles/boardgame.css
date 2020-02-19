@@ -47,5 +47,8 @@ display: flex;
     position: absolute;
     margin-top:15rem;
 }
+.gameover {
+    display: none;
+}
 
 
