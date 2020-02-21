@@ -4,17 +4,10 @@ body {
     color:white;
 }
 
-
-.bord { 
-   
+.bord {   
     margin-top: 10%;
-    margin-left: 20%;
-   /* background-color: #474747;
-   border: 10px solid rgb(172, 80, 19);
-   
-   */
-    height:713px;
-    
+    margin-left: 20%;  
+    height:713px;    
     width:70rem;
     filter: drop-shadow(0 0 0.55rem rgb(22, 22, 22));
 }
@@ -28,16 +21,16 @@ body {
 }
 
 .round2 {   
- margin-left: 3.4rem;
-position: absolute;  
-display: flex; 
+    margin-left: 3.4rem;
+    position: absolute; 
+    display: flex; 
 }
 
 .round3 {  
     float: right;
-    margin-right: 11.8rem;      
-
+    margin-right: 11.8rem;    
 }
+
 .dice { 
     color:black;
     width: 4rem;

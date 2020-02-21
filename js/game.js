@@ -1,40 +1,23 @@
 
-
-//bordbriks3 = bordOne
-//bordbrikstwo = bordTwo
-//bordbriks = boardThree
-
 var bord = document.getElementById('bordOne');
 var bord2 = document.getElementById('bordbrikstwo');
 var bord3 = document.getElementById('boardthree');
 var traps = [8,13,30,21,28,35];
-
-
 var stand = 1;
 var stand2 = 1;
-var dice = document.getElementById('dice')
-dice.innerHTML = "rolldice"
-
-
-
-
+var dice = document.getElementById('dice');
+dice.innerHTML = "rolldice";
 for(var i = 13; i>0;i--)  { 
-
     bord3.innerHTML += "<div  id = "+[i]+" class = 'brick'></div>";
-
 }
 for(var c = 14;c <= 28; c++) { 
-
     bord2.innerHTML += "<div id = "+[c]+" class = 'brick briks2'></div>";
-
 }
 for(var c = 29;c <= 40; c++) { 
-
     bord.innerHTML += "<div id = "+[c]+" class = 'brick brick3'></div>";
 }
 traps.forEach(element => {
-    document.getElementById(element).style.background = "red"
-    
+    document.getElementById(element).style.background = "red";    
 });
 
 
@@ -45,7 +28,6 @@ dice.addEventListener("click",function() {
     
     document.getElementById(stand).innerHTML = "";
     document.getElementById(stand2).innerHTML = "";
-
 
     stand+=randomNumber;
     stand2+=randomNumber2;
@@ -59,19 +41,13 @@ dice.addEventListener("click",function() {
       
     } else {
         document.getElementById('bord').style.display = "none";
-
-
     }
 
-    if (stand2 < 40) { 
-      
-    document.getElementById(stand2).innerHTML = "<img src='../playerIcon/player_icon_two.png'></img>";
-   } else {
+    if (stand2 < 40) {       
+         document.getElementById(stand2).innerHTML = "<img src='../playerIcon/player_icon_two.png'></img>";
+    } else {
     document.getElementById('bord').style.display = "none";
-    }
-
-
-  
+    } 
     
 });
 

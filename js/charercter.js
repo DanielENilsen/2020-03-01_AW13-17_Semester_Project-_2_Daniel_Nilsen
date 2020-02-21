@@ -32,7 +32,7 @@ for (var i = 0; i < charectArray.length; i++) {
     }).catch(error => console.log(error))
 }        
 function resu(result) {            
-    document.getElementById('id').innerHTML += "<div id ='jee' class = 'col-11 col-sm-11 col-md-11 col-lg-5 cardOne'><h1>" + result.name + "</h1> <h4> " + result.gender+ "</h4> <h4> "+ result.titles + "</h4></div>";
+    document.getElementById('id').innerHTML += "<div id ='jee' class = 'col-11 col-sm-11 col-md-11 col-lg-4 cardOne'><h1>" + result.name + "</h1></div>";
     displayCard();       
 }     
 
