@@ -24,7 +24,7 @@ traps.forEach(element => {
 dice.addEventListener("click",function() { 
     var randomNumber = Math.floor(Math.random()*6)+1;
     var randomNumber2 = Math.floor(Math.random()*6)+1;
-    dice.innerHTML=randomNumber
+    dice.innerHTML=randomNumber;
     
     document.getElementById(stand).innerHTML = "";
     document.getElementById(stand2).innerHTML = "";
@@ -32,12 +32,12 @@ dice.addEventListener("click",function() {
     stand+=randomNumber;
     stand2+=randomNumber2;
 
-    console.log(`Player One are on squere ${stand}`)
-    console.log(`Player two are on squere ${stand2}`)
-    console.log("")
+    console.log(`Player One are on squere ${stand}`);
+    console.log(`Player two are on squere ${stand2}`);
+    console.log("");
 
     if(stand < 40) {        
-        document.getElementById(stand).innerHTML = "<img  src='../playerIcon/iconOne.png'></img>";        
+        document.getElementById(stand).innerHTML = "<img  src='../img/Untitled-1.png'></img>";        
       
     } else {
         document.getElementById('bord').style.display = "none";
