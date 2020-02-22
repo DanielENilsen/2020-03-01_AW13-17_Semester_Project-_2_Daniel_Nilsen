@@ -24,7 +24,7 @@ for (var i = 0; i < charectArray.length; i++) {
     }).catch(error => console.log(error));
 }        
 function resu(result) {            
-    document.getElementById('id').innerHTML += "<div id ='jee' class = 'col-11 col-sm-11 col-md-11 col-lg-4 cardOne'><h1>" + result.name + "</h1></div>";
+    document.getElementById('id').innerHTML += "<div id ='jee' class = 'col-11 col-sm-11 col-md-11 col-lg-4 cardOne cardupdate'><h1>" + result.name + "</h1></div>";
     displayCard();       
 }     
 
@@ -62,10 +62,11 @@ async function slideToNext() {
     var cardOne = localStorage.getItem('Name');
     var cardTwo = localStorage.getItem('Name2');
     
-    pushCards.innerHTML += "<div  class =  'col-11 col-sm-11 col-md-11 col-lg-4 cardOne'>"+cardOne+"</div>";
-    pushCards.innerHTML += "<div class = 'col-11 col-sm-11 col-md-11 col-lg-4 cardOne'>"+cardTwo+"</div>";
+   pushCards.innerHTML += "<div  class =  'col-11 col-sm-11 col-md-11 col-lg-4 cardOne'>"+cardOne+"</div>";
+   pushCards.innerHTML += "<div class = 'col-11 col-sm-11 col-md-11 col-lg-4 cardOne'>"+cardTwo+"</div>";
    var displayCards =  document.querySelectorAll(".cardOne");
-   for(let i = 0 ; i < displayCards.length;i++) {
+   for(let i = 0 ; i < displayCards.length;i++) { 
+ 
     if(displayCards[i].style.display == "block") { 
        
         displayCards[i].style.display = "none";
@@ -73,8 +74,7 @@ async function slideToNext() {
         displayCards[i].style.display = "block";
     }            
 
-   } 
-    
+   }   
 
 }   
 

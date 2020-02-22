@@ -11,16 +11,16 @@ body {
 
 .bg-1 { 
   
-margin-top: 10%;
+margin-top:0%;
     margin-left: 4%;
-    background-color: #10101071;
+    background-color: #10101077;
     height: 2500px;
     
 }
 .cardSelected { 
     display: none;
     animation: popup 1.3s;
-    margin-top: 10%;
+    margin-top: 5%;
     margin-left: 20%;
 }
 
@@ -38,7 +38,7 @@ margin-top: 10%;
      filter: grayscale(50%);
     min-height: 50vh;
     display: none;    
-    margin-top:10%;  
+    margin-top:7%;  
     margin-left: 4%;    
     background-color: #1010103d;   
     border-radius: 10px;
@@ -62,29 +62,39 @@ margin-top: 10%;
     color:white; 
 }
 
-@keyframes popup {
+@keyframes cardSel { 
     from {
         opacity: 0;
-        margin-top:20%;
+        margin-top:10%;
 
     }to {
     opacity: 1;
-    margin-top:10%;
+    margin-top:5%;
+
+    }}
+
+@keyframes popup {
+  from {
+        opacity: 0;
+        margin-top:15%;
+
+    }to {
+    opacity: 1;
+    margin-top:7%;
 
     }
 }
 
 @media screen and (min-width:1200px) { 
-    .bg-1 {
+    .bg-1 {                
+
         margin-left: 12%;
-        height: 2700px;
+        height: 3400px;
         margin-bottom: 100px;
     }
-    .cardOne { 
-       
+    .cardOne {        
         cursor: pointer;
-        animation: popup 1.3s;
-        margin-left:10%;        
+        margin-left:10%;            
     }
 
     .cardOne:hover{ 
@@ -92,9 +102,7 @@ margin-top: 10%;
     }
     .cardOne h1 {
         font-size:3.2em;
-        text-align: center;
-    
-
+        text-align: center;   
 }
 
     .headerText {        
@@ -104,9 +112,44 @@ margin-top: 10%;
     }
 
     .cardSelected { 
-        display: none;
-        animation: popup 1.3s;
-        margin-top: 10%;
-        margin-left: 20%;
+        display: none;          
+        margin-left: 10%;
+        animation: cardSel 1.3s;
     }    
+    .CardText { 
+        margin-left: 30%;
+    }
+    .texthead {
+        font-size:2.5em;
+      }
+
+    .buttons { 
+    margin-top:3%;
+    margin-left:30%;    
+    
+    }
+    .secbtn { 
+    margin-left:10%;
+    background-color:red;
+    border:none;   	
+    height: 50px;
+    color:white;    
+	width:150px;    
+    }
+    .secbtn a { 
+        color:white;
+    }
+
+    .cardupdate { 
+        animation: popup 1.3s;
+
+    }
+        .icontext { 
+            cursor: pointer;
+    margin-left:100px;
+    margin-top:-55px;
+    }
+    .iconimage {
+        padding:4em;
+    }
 }

@@ -1,3 +1,8 @@
+@font-face {
+	font-family: GameOfThornes;
+	src:url("../game-of-thrones/Game\ of\ Thrones.ttf")
+
+}
 body { 
     background-image: url("../dark_brick_wall/dark_brick_wall/dark_brick_wall.png");
     font-family: GameOfThornes;		
@@ -43,5 +48,14 @@ body {
 .gameover {
     display: none;
 }
+.icontext { 
+ cursor: pointer;
+margin-left:100px;
+margin-top:-55px;
+}
+.iconimage {
+padding:4em;
+}
+
 
 
