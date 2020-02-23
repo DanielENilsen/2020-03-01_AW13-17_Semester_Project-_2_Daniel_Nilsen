@@ -69,6 +69,7 @@ async function slideToNext() {
  
     if(displayCards[i].style.display == "block") { 
        
+        
         displayCards[i].style.display = "none";
     } else {
         displayCards[i].style.display = "block";

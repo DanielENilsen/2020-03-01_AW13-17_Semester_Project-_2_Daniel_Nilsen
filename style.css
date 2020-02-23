@@ -130,4 +130,15 @@ width:300px;
 	width:150px;
 
 }
+.icontext { 
+	cursor: pointer;
+   margin-left:100px;
+   margin-top:-55px;
+   }
+   .iconimage {
+   padding:4em;
+   }
+   
+   
+   
 }
