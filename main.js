@@ -16,7 +16,7 @@ setTimeout(function() {
     }else { 
         id2.style.display = "block";
     }
-},500);
+},600);
 
 setTimeout(function() {
     if(id3.style.display ==="block") { 
@@ -24,7 +24,7 @@ setTimeout(function() {
     }else { 
         id3.style.display = "block";
     }
-},700);
+},1000);
 
 
 
