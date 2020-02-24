@@ -18,10 +18,9 @@ margin-top:0%;
     
 }
 .cardSelected { 
-    display: none;
-    animation: popup 1.3s;
+    display: none;   
     margin-top: 1%;
-    margin-left: 20%;
+    margin-left: 5%;
     margin-bottom: 100px;
 }
 
@@ -47,6 +46,11 @@ margin-top:0%;
  
 }
 
+    .buttons { 
+    margin-top:3%;
+    margin-left:5%;    
+    }
+
 .cardOne h1 {
     margin-top: 150px;
     color: #fff; 
@@ -63,8 +67,15 @@ margin-top:0%;
     color:white; 
     font-size: xx-large
 }
+  .secbtn { 
+    background-color:red;
+    border:none;  
+     margin-left:5%;  	
+    height: 50px;
+    color:white;    
+	width:120px;    
+    }
 
-/*Iphone 5*/
 
 
 @keyframes cardSel { 
@@ -113,6 +124,14 @@ margin-top:0%;
         min-height: 50vh;
         margin-left:10%;            
     }
+    .cardSelected { 
+    display: none;
+    animation: popup 1.3s;
+    margin-top: 1%;
+    margin-left: 20%;
+    margin-bottom: 100px;
+}
+
 
     .cardOne:hover{ 
         border:2px solid rgba(105, 42, 0, 0.472);    
