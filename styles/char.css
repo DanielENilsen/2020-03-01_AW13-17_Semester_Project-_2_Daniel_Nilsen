@@ -37,7 +37,6 @@ margin-top:0%;
      background-repeat: no-repeat;
      background-size: cover;
      filter: grayscale(50%);
-    min-height: 50vh;
     display: none;    
     margin-top:7%;  
     margin-left: 4%;    
@@ -52,28 +51,31 @@ margin-top:0%;
     margin-top: 150px;
     color: #fff; 
     font-size:1.5em;
- 
-
 }
+
 .headerText { 
     margin-bottom: 100px;
     padding-top: 50px;
     color:white;
 }
+
 .texthead {
     color:white; 
+    font-size: xx-large
 }
+
+/*Iphone 5*/
+
 
 @keyframes cardSel { 
     from {
         opacity: 0;
         margin-top:10%;
-
-    }to {
+    } to {
     opacity: 1;
     margin-top:5%;
-
-    }}
+    }
+}
 
 @keyframes popup {
   from {
@@ -87,15 +89,28 @@ margin-top:0%;
     }
 }
 
-@media screen and (min-width:1200px) { 
-    .bg-1 {                
+.icontext {
+   font-size: 1.5em;	
+   margin-left:3em;
+   margin-top:-40px;
+   width:100%;
+}
+.iconimage {
+   padding:4em;
+}
+.iconimage img { 
+	width: 25%;
+}
 
+@media screen and (min-width:1200px) { 
+    .bg-1 {     
         margin-left: 12%;
         height: 3400px;
         margin-bottom: 100px;
     }
     .cardOne {        
         cursor: pointer;
+        min-height: 50vh;
         margin-left:10%;            
     }
 
@@ -103,14 +118,14 @@ margin-top:0%;
         border:2px solid rgba(105, 42, 0, 0.472);    
     }
     .cardOne h1 {
-        font-size:3.2em;
+        font-size:2.5em;
         text-align: center;   
 }
 
-    .headerText {        
+    .headerText {
         padding-top: 100px;
-        padding-left: 30%;
-        color:white;
+        padding-left: 20%;
+        
     }
 
     .cardSelected { 
@@ -124,6 +139,7 @@ margin-top:0%;
     }
     .texthead {
         font-size:2.5em;
+        
       }
 
     .buttons { 
@@ -147,12 +163,118 @@ margin-top:0%;
         animation: popup 1.3s;
 
     }
-        .icontext { 
+    .icontext { 
+        font-size: 1.5em;
             cursor: pointer;
-    margin-left:100px;
-    margin-top:-55px;
+           margin-left:13%;
+           margin-top:-7%;
+           
+           width:50%;
+           }
+        .iconimage {
+           padding:4em;
+           }
+        .iconimage img { 
+            width: 11%;
+        }
+}
+
+@media screen and (min-device-width: 1024px) and (max-device-width: 1028px) and (orientation : landscape){
+
+	.icontext {
+		font-size: 1.5em;
+
+		margin-left:4.5em;
+		   margin-top:-9%;
+
+		width:100%;
+
+	 }
+	 
+	 .iconimage {
+		padding:4em;
+	 }
+	 .iconimage img { 
+		 width: 15%;
+
+	 }
+
+
+
+}
+
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait){
+
+
+	.icontext {
+		font-size: 1.5em;
+		margin-left:4.5em;
+		margin-top:-70px;
+		width:100%;
+	
+
+	 }
+	 .iconimage {
+		padding:4em;
+	 }
+	 .iconimage img { 
+		 width: 15%;
+	 }
+	 	 .headerText {     
+        padding-left: 15%;     
+
+          }
+          .texthead {
+          	margin-top:50px;
+          	font-size:2.5em;
+          }
+}
+
+
+
+
+
+@media screen and (min-device-width: 350px) and (max-device-width: 823px) and (orientation : landscape){
+   
+    .texthead {
+        color:white; 
+        font-size: x-large;
     }
-    .iconimage {
-        padding:4em;
+   
+    .icontext {
+        font-size: 1.5em;	
+        margin-left:28%;
+        margin-top:-60px;
+       
+        width:100%;
+     }
+     .iconimage {
+        padding:2em;
+     }    
+  
+  
+
+}
+/*Iphone 5*/
+@media screen and (min-device-width: 320px) and (max-device-width:359px) and (orientation : portrait){
+    .texthead {       
+        font-size: x-large;
+        margin-left:8%;
     }
+    
+    .icontext {
+        font-size: 1.5em;	
+        margin-left:3em;
+       
+        width:100%;
+     }
+     .iconimage {
+        padding:2em;
+     }    
+         
+  .bg-1 {
+  	margin-left:10%;
+  }
+
 }

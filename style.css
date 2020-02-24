@@ -206,7 +206,7 @@ margin-left:3em;
 
 
 .section-1 {	
-  margin-left:30%; 
+  margin-left:28%; 
  
 }
 
@@ -238,10 +238,11 @@ margin-left:3em;
 
 }
 .icontext { 
-font-size: 1.8em;
+font-size: 1.5em;
 	cursor: pointer;
-   margin-left:4em;
-   margin-top:-60px;
+   margin-left:13%;
+   margin-top:-7%;
+   
    width:50%;
    }
 .iconimage {
