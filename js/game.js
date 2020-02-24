@@ -17,13 +17,30 @@ for(var c = 29;c <= 40; c++) {
     bord.innerHTML += "<div id = "+[c]+" class = 'brick brick3'></div>";
 }
 traps.forEach(element => {
-    document.getElementById(element).style.background = "red";    
+    document.getElementById(element).style.background = "red";  
+
 });
+
 
 
 dice.addEventListener("click",function() { 
     var randomNumber = Math.floor(Math.random()*6)+1;
     var randomNumber2 = Math.floor(Math.random()*6)+1;
+    
+    var filterOne = traps.filter(function(number) { 
+        if (number == stand) {
+            return alert(`Player one Trap on ${number}`);
+        }     
+      
+    });
+    var filterOnetwo = traps.filter(function(number) { 
+        if (number == stand2) {
+            return alert(`Player two Trap on ${number}`);
+        }     
+      
+    });
+
+
     dice.innerHTML=randomNumber;
     
     document.getElementById(stand).innerHTML = "";
@@ -32,9 +49,7 @@ dice.addEventListener("click",function() {
     stand+=randomNumber;
     stand2+=randomNumber2;
 
-    console.log(`Player One are on squere ${stand}`);
-    console.log(`Player two are on squere ${stand2}`);
-    console.log("");
+   
 
     if(stand < 40) {        
         document.getElementById(stand).innerHTML = "<img  src='../img/Untitled-1.png'></img>";        

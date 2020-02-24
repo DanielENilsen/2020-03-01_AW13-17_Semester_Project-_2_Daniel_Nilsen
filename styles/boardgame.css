@@ -56,6 +56,21 @@ margin-top:-55px;
 .iconimage {
 padding:4em;
 }
+.icontext { 
+    font-size: 1.5em;
+        cursor: pointer;
+       margin-left:6%;
+       margin-top:-3%;
+       
+       width:50%;
+       }
+    .iconimage {
+       padding:4em;
+       }
+    .iconimage img { 
+        width: 5%;
+    }
+}
 
 
 
