@@ -10,7 +10,7 @@ body {
 }
 
 .bord {   
-    margin-top: 10%;
+    margin-top: 5%;
     margin-left: 20%;  
     height:713px;    
     width:70rem;
@@ -41,9 +41,9 @@ body {
     width: 4rem;
     height:4rem;
     background-color: aliceblue;
-    margin-left: 40%;
-    position: absolute;
-    margin-top:15rem;
+    margin-left: 45%;
+    position: relative;
+    margin-top:-7rem;
 }
 .gameover {
     display: none;
@@ -58,19 +58,27 @@ padding:4em;
 }
 .icontext { 
     font-size: 1.5em;
-        cursor: pointer;
-       margin-left:6%;
-       margin-top:-3%;
-       
-       width:50%;
-       }
-    .iconimage {
-       padding:4em;
-       }
-    .iconimage img { 
-        width: 5%;
-    }
+    cursor: pointer;
+    margin-left:6%;
+    margin-top:-3%;       
+    width:50%;
 }
+.iconimage {
+    padding:4em;
+}
+.iconimage img { 
+    width: 5%;
+}
+
+.gameTasks {
+    width: 40%;
+    height: 400px;    
+    position: absolute;
+    margin-left: 25%;
+    margin-top: 10%;
+   
+}
+
 
 
 
