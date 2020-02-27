@@ -20,38 +20,44 @@ var dice = document.getElementById ('dice');
 var dice2 = document.getElementById('dice2');
 var fakedice = document.getElementById('fakedice');
 var playerOne = document.querySelector("#one"); 
+var cardOne = localStorage.getItem('Name');
+var cardTwo = localStorage.getItem('Name2');
 
+if(cardOne !== null) { 
+    DiplayCards ();
 
-for(var i = 13; i>0;i--)  { 
-    bord3.innerHTML += "<div  id = "+[i]+" class = 'brick'></div>";
+} else { 
+    MagicDice.innerHTML += "<h1> Please go back and select Charecters";
 }
-for(var c = 14;c <= 28; c++) { 
-    bord2.innerHTML += "<div id = "+[c]+" class = 'brick briks2'></div>";
-}
-for(var c = 29;c <= 40; c++) { 
-    bord.innerHTML += "<div id = "+[c]+" class = 'brick brick3'></div>";    
-}
-traps.forEach(element => {
-    document.getElementById(element).style.background = "red";  
 
-});
 
 function DiplayCards () {     
-    var cardOne = localStorage.getItem('Name');
-    var cardTwo = localStorage.getItem('Name2');
+
     displayCards.innerHTML += "<div  class ='cardOne'>"+cardOne+"</div>";
     displayCards.innerHTML += "<div class = 'cardOne'>"+cardTwo+"</div>";
 
+    for(var i = 13; i>0;i--)  { 
+        bord3.innerHTML += "<div  id = "+[i]+" class = 'brick'></div>";
+    }
+    for(var c = 14;c <= 28; c++) { 
+        bord2.innerHTML += "<div id = "+[c]+" class = 'brick briks2'></div>";
+    }
+    for(var c = 29;c <= 40; c++) { 
+        bord.innerHTML += "<div id = "+[c]+" class = 'brick brick3'></div>";    
+    }
+    traps.forEach(element => {
+        document.getElementById(element).style.background = "red";  
+    
+    });
+
+
 }
-DiplayCards ()
 
 function Game() {    
     document.getElementById(stand.brick).innerHTML += stand.img;
-    document.getElementById(stand2.brick).innerHTML += stand2.img;
-    
+    document.getElementById(stand2.brick).innerHTML += stand2.img;   
 
-    dice2.addEventListener('click',function() {  
-        
+    dice2.addEventListener('click',function() {          
         var playerOne = document.querySelector("#two"); 
        
          
