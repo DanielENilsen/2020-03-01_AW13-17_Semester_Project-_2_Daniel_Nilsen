@@ -5,6 +5,9 @@ class player {
         this.img = img;    
     }
 }
+
+localStorage.removeItem("Winner");
+
 let displayCards= document.getElementById('DisplayCards');
 let btn = document.getElementById('btn');
 let textDisplay = document.getElementById('GameOver');
@@ -13,15 +16,16 @@ var bord = document.getElementById('bordOne');
 var bord2 = document.getElementById('bordbrikstwo');
 var bord3 = document.getElementById('boardthree');
 var traps = [8,13,30,21,28,35];
-var stand =  new player("PlayerOne",1,"<img id ='one' src='../playerIcon/iconOne.png'>");
-var stand2 = new player("Playertwo",1,"<img id ='two' src='../playerIcon/player_icon_two.png'>");
+var cardOne = localStorage.getItem('Name');
+var cardTwo = localStorage.getItem('Name2');
+var stand =  new player(cardOne,1,"<img id ='one' src='../playerIcon/iconOne.png'>");
+var stand2 = new player(cardTwo,1,"<img id ='two' src='../playerIcon/player_icon_two.png'>");
 let task_one = document.getElementById('taskone');
 var dice = document.getElementById ('dice');
 var dice2 = document.getElementById('dice2');
 var fakedice = document.getElementById('fakedice');
 var playerOne = document.querySelector("#one"); 
-var cardOne = localStorage.getItem('Name');
-var cardTwo = localStorage.getItem('Name2');
+
 
 if(cardOne !== null) { 
     DiplayCards ();
@@ -62,11 +66,12 @@ function Game() {
        
          
         let randNumb = Math.floor(Math.random()*6)+1;  
-        dice.innerHTML = randNumb;
+        dice.innerHTML = "<h3>"+randNumb+"</h3>";  
       
-        stand2.brick +=randNumb;   
+        stand2.brick = stand2.brick +=randNumb;   
+         
         console.log(stand2.brick);
-        moveplayer(stand2.brick,stand2.img);
+        moveplayer(stand2.brick,stand2.img,stand2.name);
       
         if(stand2.brick == 8 || stand2.brick == 13 || stand2.brick == 21 || stand2.brick == 28 || stand2.brick == 30 || stand2.brick == 35) {
             dice2.style.display = "none";
@@ -86,10 +91,10 @@ function Game() {
         var playerOne = document.querySelector("#one");
 
         var randNumb = Math.floor(Math.random()*6)+1;  
-        dice2.innerHTML = randNumb;
+        dice2.innerHTML = "<h3>"+randNumb+"</h3>";  
         stand.brick +=randNumb;   
         console.log(stand.brick);
-        moveplayer(stand.brick,stand.img);              
+        moveplayer(stand.brick,stand.img,stand.name);              
         if(stand.brick == 8 || stand.brick == 13 || stand.brick == 21 || stand.brick == 28 ||  stand.brick == 30 || stand.brick == 35) { 
             dice.style.display = "none";
             dice2.style.display = "none";
@@ -104,7 +109,7 @@ function Game() {
         }    
     });
     
-    function moveplayer(arg1,arg2) {       
+    function moveplayer(arg1,arg2,arg3) {       
   
 
         if(arg1 == 8) {            
@@ -166,8 +171,9 @@ function Game() {
             return document.getElementById(arg1).innerHTML += arg2;
         } 
         if(arg1 => 40) { 
-            return document.getElementById('bord').style.display = "none";
-        }           
+            localStorage.setItem("Winner",arg3);
+            return window.location.href ="final-page.html";
+        }
     }    
 }
 Game();

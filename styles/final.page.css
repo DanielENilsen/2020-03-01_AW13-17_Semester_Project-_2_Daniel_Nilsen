@@ -1,0 +1,118 @@
+@font-face {
+	font-family: GameOfThornes;
+	src:url("../game-of-thrones/Game\ of\ Thrones.ttf")
+
+}
+
+@font-face { 
+    font-family: DiceNumber;
+    src:url("../wonderbar/Wonderbar\ Demo.otf");
+
+}
+
+@import url('https://fonts.googleapis.com/css?family=New+Rocker&display=swap');
+
+body { 
+    background-image: url("../dark_brick_wall/dark_brick_wall/dark_brick_wall.png");
+    font-family: GameOfThornes;		
+    color:white;
+    
+}
+.iconimage {
+    padding: 3.6em;
+    }
+    .iconimage img { 
+     width: 6.1%;
+ }
+ 
+.cardOne { 
+    background: 
+    linear-gradient(
+      rgba(189, 168, 168, 0.54),
+      rgba(112, 71, 71, 0.5)
+    ),
+    url("../img/player.jpg");    
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(50%);
+    margin-top:7%;  
+    animation: display 1.2s;
+    margin-left: 30%;    
+    background-color: #1010103d;   
+    border-radius: 10px;
+    height: 20rem;
+    min-height: 50vh;   
+    text-shadow: 2px 2px #5c5c5c;
+ 
+}
+
+.winner  { 
+    overflow: hidden;
+    white-space: nowrap;
+    float: left;
+    font-size: 3em;
+    width:55%;
+    animation: slowTyping 5.5s;
+    margin-left: 28%;   
+    margin-top: 1%;
+    font-weight: 900;    
+	font-family: GameOfThornes;
+
+}
+
+@keyframes display { 
+    from { 
+        opacity: 0;
+        
+
+    } to {
+        opacity: 1;
+
+    }
+}
+@keyframes slowTyping {
+    from { width: 0 }
+    to { width: 55% }
+  }
+
+
+.error {
+    font-family: 'New Rocker';
+    color: rgb(206, 46, 46);
+    margin-left: 25%;
+    margin-top: 10%;
+    font-size:3em;
+
+}
+
+.winnertext {
+    margin-top: 150px;
+    margin-left: 30%;
+    background-color: rgba(19, 18, 18, 0.308);
+    height: 200px;
+    width: 40%;
+    animation: display 1.3s;
+
+}
+.winnertext h1  {
+    text-align: center;
+    padding-top: 10%;    
+    font-size: 5em;
+    
+}
+.displayBtn{ 
+    margin-top: 100px;
+    margin-left: 35%;
+    display: none;
+}.secbtn { 
+    animation: display 1.3s;
+    background-color: rgb(206, 46, 46);
+    border:none;  
+    font-size: 1.5em;
+    margin-left:5%;  
+    font-family: 'New Rocker';	
+    height: 50px;
+    color:white;    
+	width:150px;    
+}

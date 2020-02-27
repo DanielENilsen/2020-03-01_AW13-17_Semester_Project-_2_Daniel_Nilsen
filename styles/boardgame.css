@@ -3,6 +3,12 @@
 	src:url("../game-of-thrones/Game\ of\ Thrones.ttf")
 
 }
+
+@font-face { 
+    font-family: DiceNumber;
+    src:url("../wonderbar/Wonderbar\ Demo.otf");
+
+}
 body { 
     background-image: url("../dark_brick_wall/dark_brick_wall/dark_brick_wall.png");
     font-family: GameOfThornes;		
@@ -38,15 +44,21 @@ body {
 }
 
 .dice { 
+    border: 5px solid rgb(155, 155, 155);
     color:rgb(255, 255, 255);
     width: 4rem;
     height:4rem;
-    background: linear-gradient(to left, #996633 44%, #663300 98%);
+    background: linear-gradient(to left, #831919 44%, #9c2828bd 98%);
     margin-left: 45%;
-    position: relative;
+    position: relati0ve;
     font-size: 2em;
-    margin-top: 5%;
-    
+    font-family: DiceNumber;
+    margin-top: 5%;    
+}
+.dice h3 {
+    padding:0.1em;
+    font-size: 1.4em;
+    margin-left: 20%;
 }
 .gameover {
     display: none;

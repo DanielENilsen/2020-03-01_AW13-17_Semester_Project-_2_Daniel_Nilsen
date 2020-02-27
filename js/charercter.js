@@ -14,7 +14,6 @@ for (var i = 0; i < charectArray.length; i++) {
                 localStorage.setItem("Name2",this.innerHTML);
             } else { 
                 localStorage.setItem("Name",this.innerHTML);
-               // cards[i].style.borderColor = "red";          
             }            
             if("Name" in localStorage && "Name2" in localStorage) {
                 slideToNext();                
