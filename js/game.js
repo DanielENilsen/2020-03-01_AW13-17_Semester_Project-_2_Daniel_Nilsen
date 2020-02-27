@@ -43,16 +43,27 @@ function DiplayCards () {
     for(var i = 13; i>0;i--)  { 
         bord3.innerHTML += "<div  id = "+[i]+" class = 'brick'></div>";
     }
-    for(var c = 14;c <= 28; c++) { 
-        bord2.innerHTML += "<div id = "+[c]+" class = 'brick briks2'></div>";
+    for(var c = 13;c <= 28; c++) { 
+        bord2.innerHTML += "<div id = "+[c]+" class = 'brick'></div>";
     }
-    for(var c = 29;c <= 40; c++) { 
-        bord.innerHTML += "<div id = "+[c]+" class = 'brick brick3'></div>";    
+    for(var c = 28;c <= 40; c++) { 
+        bord.innerHTML += "<div id = "+[c]+" class = 'brick'></div>";    
+    }
+   
+    let color_tiles = document.querySelectorAll(".brick");
+    for(let i = 0; i < color_tiles.length;i++) { 
+        if(i % 2 == 0) { 
+            color_tiles[i].style.backgroundColor = "#c8cfdb";
+        }      
+
     }
     traps.forEach(element => {
-        document.getElementById(element).style.background = "red";  
+        document.getElementById(element).style.background = "#ab0524";  
     
     });
+    
+    
+    
 
 
 }
