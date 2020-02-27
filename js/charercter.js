@@ -53,7 +53,7 @@ async function slideToNext() {
     activate.style.display = "none";
 
     if(selecetcards.style.display == "block") { 
-        alert("nul")
+       
         selecetcards.style.display = "none";
     } else {
         selecetcards.style.display = "block";

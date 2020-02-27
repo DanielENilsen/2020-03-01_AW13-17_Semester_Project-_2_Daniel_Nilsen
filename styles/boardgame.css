@@ -76,11 +76,37 @@ padding:4em;
     height: 400px;    
     position: absolute;
     margin-left: 25%;
-    margin-top: 10%;
-    
+    margin-top: 10%;   
    
 }
+.cardOne { 
+    background: 
+    linear-gradient(
+      rgba(189, 168, 168, 0.54),
+      rgba(112, 71, 71, 0.5)
+    ),
+    url("../img/player.jpg");
+    
+     background-position: center center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     filter: grayscale(50%);     
+    margin-top:7%;  
+    
+    margin-left: 4%;    
+    background-color: #1010103d;   
+    border-radius: 10px;
+    height: 20rem;
+    text-shadow: 2px 2px #5c5c5c; 
+     grid-row: 1;
+}
+.DisplayCards { 
+margin-left:15%;
+    display: grid;
+    grid-template-columns: 45% 45%;
+    margin-top:-500px;
 
+}
 
 
 
