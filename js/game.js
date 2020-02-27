@@ -62,6 +62,7 @@ function Game() {
        
          
         let randNumb = Math.floor(Math.random()*6)+1;  
+        dice.innerHTML = randNumb;
       
         stand2.brick +=randNumb;   
         console.log(stand2.brick);
@@ -85,6 +86,7 @@ function Game() {
         var playerOne = document.querySelector("#one");
 
         var randNumb = Math.floor(Math.random()*6)+1;  
+        dice2.innerHTML = randNumb;
         stand.brick +=randNumb;   
         console.log(stand.brick);
         moveplayer(stand.brick,stand.img);              

@@ -7,13 +7,14 @@ body {
     background-image: url("../dark_brick_wall/dark_brick_wall/dark_brick_wall.png");
     font-family: GameOfThornes;		
     color:white;
+    
 }
 
 .bord {   
-    margin-top: 5%;
-    margin-left: 20%;  
+    animation: DisplayGame 1.3s;
+    margin-left: 25%;  
     height:713px;    
-    width:70rem;
+    width:55rem;
     filter: drop-shadow(0 0 0.55rem rgb(22, 22, 22));
 }
 
@@ -25,25 +26,27 @@ body {
     width: 3.3rem;
 }
 
-.round2 {   
-    margin-left: 3.4rem;
+.round2 {  
+    
     position: absolute; 
     display: flex; 
 }
 
 .round3 {  
     float: right;
-    margin-right: 13.8rem; 
+    margin-right: 2.2rem; 
 }
 
 .dice { 
-    color:black;
+    color:rgb(255, 255, 255);
     width: 4rem;
     height:4rem;
-    background-color: aliceblue;
+    background: linear-gradient(to left, #996633 44%, #663300 98%);
     margin-left: 45%;
     position: relative;
-    margin-top:-7rem;
+    font-size: 2em;
+    margin-top: 5%;
+    
 }
 .gameover {
     display: none;
@@ -91,28 +94,37 @@ padding:4em;
      background-repeat: no-repeat;
      background-size: cover;
      filter: grayscale(50%);     
-    margin-top:7%;  
-    
-    margin-left: 4%;    
+    margin-top:7%;      
+    margin-left: 15%;    
     background-color: #1010103d;   
     border-radius: 10px;
-    height: 20rem;
+    height: 15rem;
     text-shadow: 2px 2px #5c5c5c; 
      grid-row: 1;
 }
 .DisplayCards { 
-margin-left:10%;
+   margin-left:15%;
     display: grid;
-    grid-template-columns: 45% 45%;
-    margin-top:-500px;
+    grid-template-columns: 40% 40%;
+    margin-top:-600px;
 
 }
 .cardOne h1 {
-    margin-top: 150px;
+    margin-top: 100px;
     color: #fff; 
    
-    font-size:2.5em;
+    font-size:1.8em;
     text-align: center;
 }
 
 
+
+@keyframes DisplayGame { 
+    from {
+        opacity: 0;
+    
+    } to {
+    opacity: 1;
+
+    }
+}

@@ -81,10 +81,10 @@ margin-top:0%;
 @keyframes cardSel { 
     from {
         opacity: 0;
-        margin-top:10%;
+    
     } to {
     opacity: 1;
-    margin-top:5%;
+
     }
 }
 
@@ -126,8 +126,7 @@ margin-top:0%;
     }
     .cardSelected { 
     display: none;
-    animation: popup 1.3s;
-    margin-top: 1%;
+    animation: cardSel 1.3s;  
     margin-left: 20%;
     margin-bottom: 100px;
 }
@@ -150,14 +149,17 @@ margin-top:0%;
     .cardSelected { 
         display: none;          
         margin-left: 10%;
-        animation: cardSel 1.3s;
+        
         
     }    
     .CardText { 
         margin-left: 30%;
+        margin-top: -5%;
+        animation: cardSel 1.3s;
     }
     .texthead {
         font-size:2.5em;
+        margin-left: 4%;
         
       }
 
@@ -195,10 +197,8 @@ margin-top:0%;
 
 	.icontext {
 		font-size: 1.5em;
-
 		margin-left:4.5em;
-		   margin-top:-9%;
-
+		margin-top:-9%;
 		width:100%;
 
 	 }
@@ -213,15 +213,30 @@ margin-top:0%;
         
         margin-left: 25%;
     }
+    .bg-1 { 
+        margin-left: 10%;
+    }
 
 
+    .headerText {     
+        padding-left: 10%; 
+          
 
+          }
+          .texthead {
+          	margin-top:50px;
+          	font-size:2.1em;
+          }
 
 }
 
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait){
 
+ .cardOne h1 {
+     font-size: 2em;
+ }
+   
 
 	.icontext {
 		font-size: 1.5em;
@@ -238,12 +253,13 @@ margin-top:0%;
 		 width: 15%;
 	 }
 	 	 .headerText {     
-        padding-left: 15%;     
+        padding-left: 10%; 
+          
 
           }
           .texthead {
           	margin-top:50px;
-          	font-size:2.5em;
+          	font-size:2.1em;
           }
 }
 
@@ -255,7 +271,11 @@ margin-top:0%;
 
 @media screen and (min-device-width: 350px) and (max-device-width: 823px) and (orientation : landscape){
    
-    
+    .CardText { 
+        font-size: x-large;
+        margin-bottom: 5%;
+        margin-left: 15%;
+    }
    
     
      .iconimage {
@@ -266,8 +286,10 @@ margin-top:0%;
     }  
     .buttons {
         
-        margin-left: 25%;
+        margin-left: 20%;
     }
+    
+    
 
   
   
@@ -293,6 +315,9 @@ margin-top:0%;
          
   .bg-1 {
   	margin-left:5%;
+  }
+  .secbtn {
+      margin-left: 1%;
   }
 
 }
