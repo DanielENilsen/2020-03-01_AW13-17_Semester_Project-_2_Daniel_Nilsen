@@ -22,9 +22,10 @@ h5 {
 }
 
 .bord {   
+    margin-top: -130px;
     animation: DisplayGame 1.3s;
-    margin-left: 20%;  
-    height:713px;    
+    margin-left: 23%;  
+    height:613px;    
     width:55rem;
     filter: drop-shadow(0 0 0.55rem rgb(0, 0, 0));
 }
@@ -32,19 +33,19 @@ h5 {
 .brick { 
     color:black;   
     background-color: #2a4a7d;
-    height:  3.3rem;
-    width: 3.3rem;
+    height:  3rem;
+    width: 3rem;
 }
 
 .round2 {  
     
-    position: absolute; 
+     
     display: flex; 
 }
 
 .round3 {  
     float: right;
-    margin-right: 2.2rem; 
+    margin-right: 7rem; 
 }
 
 .dice { 
@@ -89,6 +90,12 @@ h5 {
     margin-left: 230px;
 }
 
+.caslteImg { 
+    width: 70%;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
 .btn {
     margin-top:20px;
     background-color: rgb(206, 46, 46);
@@ -101,7 +108,7 @@ h5 {
     font-family:sans-serif;   
 	width:120px;    
 }
-}
+
 .icontext { 
  cursor: pointer;
 margin-left:100px;
@@ -177,4 +184,17 @@ padding:4em;
     opacity: 1;
 
     }
+}
+.testing { 
+    background-image: url("../icons/Castle.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 50px;
+    width: 50px;
+}
+
+.playericon { 
+    width: 50%;
 }

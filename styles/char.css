@@ -13,8 +13,9 @@ body {
   
 margin-top:0%;
     margin-left: 4%;
-    background-color: #10101077;
-    height: 2500px;
+    margin-bottom:100px;   
+    
+
     
 }
 .cardSelected { 
@@ -119,6 +120,7 @@ margin-top:0%;
         margin-left: 12%;
         height: 3400px;
         margin-bottom: 100px;
+         background-color: #10101077;
     }
     .cardOne {        
         cursor: pointer;

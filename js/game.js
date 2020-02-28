@@ -17,8 +17,8 @@ var bord3 = document.getElementById('boardthree');
 var traps = [8,13,30,21,28,35];
 var cardOne = localStorage.getItem('Name');
 var cardTwo = localStorage.getItem('Name2');
-var stand =  new player(cardOne,1,"<img id ='one' src='../playerIcon/iconOne.png'>");
-var stand2 = new player(cardTwo,1,"<img id ='two' src='../playerIcon/player_icon_two.png'>");
+var stand =  new player(cardOne,1,"<img class='playericon' id ='one' src='../playerIcon/PlayerIcon1.png'>");
+var stand2 = new player(cardTwo,1,"<img class='playericon' id ='two' src='../playerIcon/Playericon2.png'>");
 let task_one = document.getElementById('taskone');
 var dice = document.getElementById ('dice');
 var dice2 = document.getElementById('dice2');
@@ -39,26 +39,30 @@ function DiplayCards () {
     displayCards.innerHTML += "<div  class ='cardOne'>"+cardOne+"</div>";
     displayCards.innerHTML += "<div class = 'cardOne'>"+cardTwo+"</div>";
 
-    for(var i = 13; i>0;i--)  { 
+    for(var i = 13; i > 0;i--)  { 
         bord3.innerHTML += "<div  id = "+[i]+" class = 'brick'></div>";
     }
-    for(var c = 13;c <= 28; c++) { 
+    for(var c = 14;c <= 28; c++) { 
         bord2.innerHTML += "<div id = "+[c]+" class = 'brick'></div>";
     }
-    for(var c = 28;c <= 40; c++) { 
+    for(var c = 29;c < 41; c++) { 
         bord.innerHTML += "<div id = "+[c]+" class = 'brick'></div>";    
     }
+    document.getElementById(40).innerHTML += "<img class ='caslteImg' src='../icons/Crown.png'>";
    
+   
+    traps.forEach(element => {
+     
+       document.getElementById(element).style.backgroundColor = "#8c0900";    
+    });  
     let color_tiles = document.querySelectorAll(".brick");
+
     for(let i = 0; i < color_tiles.length;i++) { 
         if(i % 2 == 0) { 
-            color_tiles[i].style.backgroundColor = "#c8cfdb";
+            color_tiles[i].style.backgroundColor += "#c8cfdb";
+            
         }     
     }
-    traps.forEach(element => {
-        document.getElementById(element).style.background = "#ab0524";  
-    
-    });  
 
 
 }
