@@ -26,6 +26,7 @@ var dice2 = document.getElementById('dice2');
 var fakedice = document.getElementById('fakedice');
 var playerOne = document.querySelector("#one"); 
 var sectionBtn = document.getElementById('sectionBtn');
+let repond = document.getElementById('repond');
 
 
 if(cardOne !== null) { 
@@ -76,7 +77,8 @@ function Game() {
     document.getElementById(stand.brick).innerHTML += stand.img;
     document.getElementById(stand2.brick).innerHTML += stand2.img;   
 
-    dice2.addEventListener('click',function() {          
+    dice2.addEventListener('click',function() {      
+        repond.innerHTML = "";    
         var playerOne = document.querySelector("#two"); 
        
          
@@ -104,7 +106,7 @@ function Game() {
  
     dice.addEventListener('click',function(){       
         var playerOne = document.querySelector("#one");
-
+        repond.innerHTML = ""; 
         var randNumb = Math.floor(Math.random()*6)+1;  
         dice2.innerHTML = "<h3>"+randNumb+"</h3>";  
         stand.brick +=randNumb;   
@@ -202,6 +204,7 @@ function text_text(arg,arg2,arg3) {
 function correct() {     
     textDisplay.innerHTML  = "";  
     sectionBtn.innerHTML = "";
+    repond.innerHTML = "<h4 class 'textRepnd'>Correct you are free to move on </h4>";
     if(stand.brick == 8 || stand.brick == 13 || stand.brick == 21 || stand.brick == 28 ||  stand.brick == 30 || stand.brick == 35) { 
         dice.style.display = "none";
         dice2.style.display = "block";
@@ -215,7 +218,7 @@ function correct() {
 function wrong(arg) {    
     textDisplay.innerHTML  = ""; 
     sectionBtn.innerHTML = "";
-
+    repond.innerHTML = "<h4 class 'textRepnd'>Wrong, you are Going back 2 steps</h4>";
     sum = (arg -2 );
    
    

@@ -37,18 +37,14 @@ h5 {
     width: 3.4rem;
 }
 
-.round2 {  
-    
-     
+.round2 {    
     display: flex; 
 }
 
 .round3 {  
     margin-right: 0.7em;
-    float: right;
-  
+    float: right; 
 }
-
 .dice { 
     border: 5px solid rgb(155, 155, 155);
     color:rgb(255, 255, 255);
@@ -62,6 +58,7 @@ h5 {
     font-family: DiceNumber;
     margin-top: 8%;    
 }
+
 .dice h3 {
     padding:0.1em;
     font-size: 1.4em;
@@ -79,17 +76,15 @@ h5 {
     margin-top: 50px;
     margin-left: 50px;
 }
-
 .questionClass { 
     font-size: 1.8em;
     margin-left: 180px;
     margin-top: 50px;
-    font-family:serif;
-    
-
+    font-family: 'Averia Libre';   
 }
+
 .theButtons {
-    margin-left: 230px;
+    margin-left: 230px;   
 }
 
 .caslteImg { 
@@ -103,21 +98,21 @@ h5 {
     background-color: rgb(206, 46, 46);
     border:none;  
     font-size: 1.5em;
-    margin-left:5%;  
-    font-family: 'New Rocker';	
+    margin-left:5%;    
     height: 45px;
     color:white; 
-    font-family:sans-serif;   
+    font-family: 'Averia Libre'; 
 	width:120px;    
 }
 
 .icontext { 
  cursor: pointer;
-margin-left:100px;
-margin-top:-55px;
+ margin-left:100px;
+ margin-top:-55px;
 }
+
 .iconimage {
-padding:4em;
+ padding:4em;
 }
 .icontext { 
     font-size: 1.5em;
@@ -212,6 +207,15 @@ padding:4em;
     width: 8%;
     margin-left:48%;
     margin-top: 31%;
+}
+.reponsd { 
+    margin-top: 50px;
+    margin-left: 20%;
+    font-family: 'Averia Libre';
+    font-size: 2em;
 
-
+}
+ 
+h4 { 
+    font-size: 1.1em;
 }
