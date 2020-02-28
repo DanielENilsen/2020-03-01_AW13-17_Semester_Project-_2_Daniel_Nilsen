@@ -24,6 +24,12 @@ margin-top:0%;
     margin-left: 5%;
     margin-bottom: 100px;
 }
+.CardText { 
+    font-size: x-large;
+    margin-bottom: 5%;
+    margin-left: 10%;    
+    font-family: 'Averia Libre';
+}
 
 .cardOne { 
     background: 
@@ -158,7 +164,10 @@ margin-top:0%;
     .CardText { 
         margin-left: 30%;
         margin-top: -5%;
+        font-size: 2.5em;
         animation: cardSel 1.3s;
+        letter-spacing: 15px;
+        font-family: 'Averia Libre'; 
     }
     .texthead {
         font-size:2.5em;
@@ -266,6 +275,13 @@ margin-top:0%;
           	margin-top:50px;
           	font-size:2.1em;
           }
+          .CardText { 
+            font-size: 3em;
+            margin-bottom: 5%;
+            margin-left: 10%;    
+            font-family: 'Averia Libre';
+        }
+        
 }
 
 
@@ -277,9 +293,9 @@ margin-top:0%;
 @media screen and (min-device-width: 350px) and (max-device-width: 823px) and (orientation : landscape){
    
     .CardText { 
-        font-size: x-large;
+        font-size: large;
         margin-bottom: 5%;
-        margin-left: 15%;
+        margin-left: 10%;
     }
    
     
@@ -294,6 +310,12 @@ margin-top:0%;
         margin-left: 20%;
     }
     
+    .CardText { 
+        font-size: 3em;
+        margin-bottom: 5%;
+        margin-left: 10%;    
+        font-family: 'Averia Libre';
+    }
     
 
   
