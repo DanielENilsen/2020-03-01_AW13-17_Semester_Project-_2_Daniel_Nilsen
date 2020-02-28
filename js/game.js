@@ -7,7 +7,6 @@ class player {
 }
 
 localStorage.removeItem("Winner");
-
 let displayCards= document.getElementById('DisplayCards');
 let btn = document.getElementById('btn');
 let textDisplay = document.getElementById('GameOver');
@@ -25,6 +24,7 @@ var dice = document.getElementById ('dice');
 var dice2 = document.getElementById('dice2');
 var fakedice = document.getElementById('fakedice');
 var playerOne = document.querySelector("#one"); 
+var sectionBtn = document.getElementById('sectionBtn');
 
 
 if(cardOne !== null) { 
@@ -33,7 +33,6 @@ if(cardOne !== null) {
 } else { 
     MagicDice.innerHTML += "<h1> Please go back and select Charecters";
 }
-
 
 function DiplayCards () {     
 
@@ -54,16 +53,12 @@ function DiplayCards () {
     for(let i = 0; i < color_tiles.length;i++) { 
         if(i % 2 == 0) { 
             color_tiles[i].style.backgroundColor = "#c8cfdb";
-        }      
-
+        }     
     }
     traps.forEach(element => {
         document.getElementById(element).style.background = "#ab0524";  
     
-    });
-    
-    
-    
+    });  
 
 
 }
@@ -124,55 +119,53 @@ function Game() {
   
 
         if(arg1 == 8) {            
-            let text = "Did John snow killed Dragon Lady?";
-            let Qurrect = "<button onclick='correct();'>Yes</button>";
-            let wrong = "<button onclick='wrong("+arg1+");'>No</button>";            
+            let text = "<h3 class = 'questionClass'>Did John snow killed Daenerys Targaryen?</h3>";
+            let Qurrect = "<button class = 'btn' onclick='correct();'>Yes </button>";
+            let wrong = "<button class ='btn' onclick='wrong("+arg1+");'> No </button>";            
             text_text(text,Qurrect,wrong);  
             dice.style.display = "none";
-            dice2.style.display = "none"; 
-                           
-        }
-       
+            dice2.style.display = "none";                            
+        }       
           
         if(arg1 == 13)  {                
-            let text = "Who wrote game of thrones ?";
-            let Qurrect = "<button onclick='correct();'>George R. R. Martin</button>";
-            let wrong = "<button onclick='wrong("+arg1+");'>No</button>";          
+            
+            let text = "<h3 class = 'questionClass'>Who wrote The Game Of Thrones ?</h3>";
+            let Qurrect = "<button class = 'btn' onclick='correct();'> Martin </button>";
+            let wrong = "<button class ='btn' onclick='wrong("+arg1+");'>Rowling </button>";          
             text_text(text,wrong,Qurrect);   
             dice.style.display = "none";
             dice2.style.display = "none";     
         } 
-        if(arg1 == 21)   {          
-            let text = "How many seasons are there of Game of Thornes";
-            let Qurrect = "<button onclick='correct();'>8</button>";
-            let wrong = "<button onclick='wrong("+arg1+");'>No</button>";            
-            text_text(text,Qurrect,wrong);
+        if(arg1 == 21)   {       
+            let text = "<h3 class = 'questionClass'>How many tv seasons are there?</h3>";             
+            let Qurrect = "<button class = 'btn' onclick='correct();'>8 </button>";
+            let wrong = "<button class ='btn' onclick='wrong("+arg1+");'> 7 </button>";            
+            text_text(text,wrong,Qurrect);
             dice.style.display = "none";
             dice2.style.display = "none";     
         } 
-
-        if(arg1 == 28)   {           
-            let text = "How many seasons are there of Game of Thornes";
-            let Qurrect = "<button onclick='correct();'>8</button>";
-            let wrong = "<button onclick='wrong("+arg1+");'>No</button>";             
-            text_text(text,Qurrect,wrong);
+        if(arg1 == 28)   {                      
+            let text = "<h3 class = 'questionClass'>Can Bran see/vision in to the future? </h3>";       
+            let Qurrect = "<button class = 'btn' onclick='correct();'>Yes </button>";
+            let wrong = "<button class ='btn' onclick='wrong("+arg1+");'> No </button>";             
+            text_text(text,wrong,Qurrect);
             dice.style.display = "none";
             dice2.style.display = "none";            
         }    
         
         if(arg1 == 30)  {            
-            let text = "How many seasons are there of Game of Thornes";
-            let Qurrect = "<button onclick='correct();'>8</button>";
-            let wrong = "<button onclick='wrong("+arg1+");'>No</button>";             
+            let text = "<h3 class = 'questionClass'>What house did King Joffrey belong to ?</h3>";       
+            let Qurrect = "<button class = 'btn' onclick='correct();'> Lannister </button>";
+            let wrong = "<button class ='btn' onclick='wrong("+arg1+");'>  Stark </button>";            
             text_text(text,Qurrect,wrong);
             dice.style.display = "none";
             dice2.style.display = "none";             
         } 
-        if(arg1 == 35) {            
-            let text = "How many seasons are there of Game of Thornes";
-            let Qurrect = "<button onclick='correct();'>8</button>";
-            let wrong = "<button onclick='wrong("+arg1+");'>No</button>";             
-            text_text(text,Qurrect,wrong);
+        if(arg1 == 35) {           
+            let text = "<h3 class = 'questionClass'>The latest book in the saga came out in ?</h3>";     
+            let Qurrect = "<button class = 'btn' onclick='correct();'>2011</button>";
+            let wrong = "<button class ='btn' onclick='wrong("+arg1+");'> 2015</button>";           
+            text_text(text,wrong,Qurrect);
             dice.style.display = "none";
             dice2.style.display = "none";           
         }
@@ -190,15 +183,16 @@ function Game() {
 Game();
 
 function text_text(arg,arg2,arg3) {  
-    textDisplay.innerHTML += arg ;
-    textDisplay.innerHTML += arg2;
-    textDisplay.innerHTML += arg3;
+    textDisplay.innerHTML += arg;
+    sectionBtn.innerHTML += arg2;
+    sectionBtn.innerHTML += arg3;
     dice.style.display = "none";
     dice2.style.display = "none";   
 }
 
 function correct() {     
     textDisplay.innerHTML  = "";  
+    sectionBtn.innerHTML = "";
     if(stand.brick == 8 || stand.brick == 13 || stand.brick == 21 || stand.brick == 28 ||  stand.brick == 30 || stand.brick == 35) { 
         dice.style.display = "none";
         dice2.style.display = "block";
@@ -211,6 +205,8 @@ function correct() {
 
 function wrong(arg) {    
     textDisplay.innerHTML  = ""; 
+    sectionBtn.innerHTML = "";
+
     sum = (arg -2 );
    
    
