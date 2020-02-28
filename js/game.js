@@ -1,3 +1,4 @@
+  
 class player { 
     constructor(name,brick,img) { 
         this.name = name;
@@ -17,7 +18,7 @@ var bord3 = document.getElementById('boardthree');
 var traps = [8,13,30,21,28,35];
 var cardOne = localStorage.getItem('Name');
 var cardTwo = localStorage.getItem('Name2');
-var stand =  new player(cardOne,1,"<img class='playericon' id ='one' src='../playerIcon/PlayerIcon1.png'>");
+var stand =  new player(cardOne,1,"<img class='playericon' id ='one' src='../playerIcon/PlayerIcon1.png'>",);
 var stand2 = new player(cardTwo,1,"<img class='playericon' id ='two' src='../playerIcon/Playericon2.png'>");
 let task_one = document.getElementById('taskone');
 var dice = document.getElementById ('dice');
@@ -38,6 +39,10 @@ function DiplayCards () {
 
     displayCards.innerHTML += "<div  class ='cardOne'>"+cardOne+"</div>";
     displayCards.innerHTML += "<div class = 'cardOne'>"+cardTwo+"</div>";
+    displayCards.innerHTML += "<div class = 'iconshow'>"+stand.img+"</div>";
+    displayCards.innerHTML += "<div class = 'iconshow2'>"+stand2.img+"</div>";
+
+
 
     for(var i = 13; i > 0;i--)  { 
         bord3.innerHTML += "<div  id = "+[i]+" class = 'brick'></div>";
