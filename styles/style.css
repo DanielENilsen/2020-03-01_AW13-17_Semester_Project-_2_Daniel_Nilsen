@@ -1,10 +1,7 @@
 @font-face {
 	font-family: GameOfThornes;
-	src:url("game-of-thrones/Game\ of\ Thrones.ttf")
-
+	src:url("../game-of-thrones/Game\ of\ Thrones.ttf");
 }
-
-
 @keyframes slide{ 
 	from {
 		opacity: 0;
@@ -12,7 +9,6 @@
 	} to { 
 		margin-top:35%;
 		opacity: 1;
-
 	}
 }
 @keyframes slide2{ 
@@ -37,9 +33,9 @@
 }
 
 body { 
-		background-image: url("dark_brick_wall/dark_brick_wall/dark_brick_wall.png");
-		font-family: GameOfThornes;		
-		color:white;
+	background-image: url("../dark_brick_wall/dark_brick_wall/dark_brick_wall.png");
+	font-family: GameOfThornes;		
+	color:white;
 }
 
 

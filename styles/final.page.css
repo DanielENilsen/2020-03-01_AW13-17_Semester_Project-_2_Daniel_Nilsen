@@ -1,6 +1,6 @@
 @font-face {
 	font-family: GameOfThornes;
-	src:url("../game-of-thrones/Game\ of\ Thrones.ttf")
+	src:url("../game-of-thrones/Game\ of\ Thrones.ttf");
 
 }
 
@@ -20,11 +20,10 @@ body {
 }
 .iconimage {
     padding: 3.6em;
-    }
-    .iconimage img { 
-     width: 6.1%;
- }
- 
+}
+.iconimage img { 
+    width: 6.1%;
+} 
 .cardOne { 
     background: 
     linear-gradient(
@@ -43,8 +42,7 @@ body {
     border-radius: 10px;
     height: 20rem;
     min-height: 50vh;   
-    text-shadow: 2px 2px #5c5c5c;
- 
+    text-shadow: 2px 2px #5c5c5c; 
 }
 
 .winner  { 

@@ -57,24 +57,20 @@ async function slideToNext() {
     } else {
         selecetcards.style.display = "block";
     } 
-
     var cardOne = localStorage.getItem('Name');
     var cardTwo = localStorage.getItem('Name2');
     
-   pushCards.innerHTML += "<div  class =  'col-11 col-sm-11 col-md-11 col-lg-5 col-xl-4 cardOne'>"+cardOne+"</div>";
-   pushCards.innerHTML += "<div class = 'col-11 col-sm-11 col-md-11 col-lg-5 col-xl-4 cardOne'>"+cardTwo+"</div>";
-   var displayCards =  document.querySelectorAll(".cardOne");
-   for(let i = 0 ; i < displayCards.length;i++) { 
- 
-    if(displayCards[i].style.display == "block") { 
-               
-        displayCards[i].style.display = "none";
-    } else {
+    pushCards.innerHTML += "<div  class =  'col-11 col-sm-11 col-md-11 col-lg-5 col-xl-4 cardOne'>"+cardOne+"</div>";
+    pushCards.innerHTML += "<div class = 'col-11 col-sm-11 col-md-11 col-lg-5 col-xl-4 cardOne'>"+cardTwo+"</div>";
+    var displayCards =  document.querySelectorAll(".cardOne");
+
+    for(let i = 0 ; i < displayCards.length;i++) {  
+        if(displayCards[i].style.display == "block") {
+            displayCards[i].style.display = "none";
+        } else {
         displayCards[i].style.display = "block";
-    }            
-
-   }   
-
+        }
+    }  
 }   
 
 

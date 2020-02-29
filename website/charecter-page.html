@@ -1,57 +1,45 @@
 <!DOCTYPE html>
 <html lang="en"> 
-    <head>
-        <meta charset="utf-8" />
-          <meta name="viewport" content="width=device-width, initial-scale=1">
-          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <title> Charecter</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=New+Rocker&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Averia+Libre&display=swap" rel="stylesheet">
-
-
-    <link rel = "stylesheet" href="../styles/char.css">
+    <head>        
+        <meta charset="utf-8"> 
+        <meta name = "author" content="Daniel Nilsen"> 
+        <meta name = "description" content="Semester Project">
+        <meta name = "keywords" content="Javascript,board,game,Game of Thornes,CSS,HTML,free,characters">
+        <meta name="subject" content="Game of Thornes board Game">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <title> Charecter Page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=New+Rocker&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Averia+Libre&display=swap" rel="stylesheet">
+        <link rel = "stylesheet" href="../styles/char.css">
     </head>
-    <body id = "body">
+    <body id = "body">        
         <div  class = "  iconimage">
-            <a href="../index.html" ><img src="../icon2.png"></a>
+            <a href="../index.html" ><img src="../img/icon2.png"></a>
         </div>
-
         <section  id = "disCards" class = "col-11 col-sm-11 col-md-11 col-lg-10 cardSelected">
-            <h1 class = "CardText"> Characters  selected</h1>
-                <div class = "buttons">
+            <h1 class = "CardText"> Characters  selected</h1>            
+            <div class = "buttons">
                 <button onclick="window.location.href ='game.html';" class = "secbtn">Play</button>
                 <button onclick="window.location.href ='charecter-page.html';" class = "secbtn">Go Back</button>
-            </div>
-    
+            </div>    
             <div class = "conteiner">
-                <div id = "selid" class = "row">
-
-                </div>
-            </div>
-                      
-     
-        </section>
-        
+                <div id = "selid" class = "row"></div>
+            </div>                     
+        </section>        
         <section id = "bg-1" class ="col-11 col-sm-11 col-md-11 col-lg-10 bg-1">
-            <div class = " headerText">
-                
-                <h2 class = "texthead">Select your characters<img class = "castle" src= "../icons/Castle.png"></h2>
-                
+            <div class = " headerText">               
+                <h2 class = "texthead">Select your characters<img class = "castle" src= "../icons/Castle.png"></h2>                
             </div>
             <div class = "conteiner">
-                <div  id = "id" class = "row">
-                 
-                </div>            
+                <div  id = "id" class = "row"></div>            
             </div>            
-        </section>
-        
-        
+        </section>       
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-        <script src="../js/charercter.js"></script>
-       
+        <script src="../js/charercter.js"></script>       
     </body>
 </html>

@@ -1,12 +1,12 @@
 @font-face {
 	font-family: GameOfThornes;
-	src:url("../game-of-thrones/Game\ of\ Thrones.ttf")
+	src:url("../game-of-thrones/Game\ of\ Thrones.ttf");
 
 }
 
 @font-face { 
     font-family: DiceNumber;
-    src:url("../wonderbar/Wonderbar\ Demo.otf");
+    src:url("../font/wonderbar/Wonderbar\ Demo.otf");
 
 }
 body { 
@@ -123,10 +123,10 @@ h5 {
 }
 .iconimage {
     padding: 3.6em;
-    }
-    .iconimage img { 
-     width: 6.1%;
- }
+}
+.iconimage img { 
+    width: 6.1%;
+}
 
 .gameTasks {
     width: 40%;
