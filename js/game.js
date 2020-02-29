@@ -18,7 +18,7 @@ var bord3 = document.getElementById('boardthree');
 var traps = [8,13,30,21,28,35];
 var cardOne = localStorage.getItem('Name');
 var cardTwo = localStorage.getItem('Name2');
-var stand =  new player(cardOne,1,"<img class='playericon' id ='one' src='../playerIcon/PlayerIcon1.png'>",);
+var stand =  new player(cardOne,1,"<img class='playericon' id ='one' src='../playerIcon/PlayerIcon1.png'>");
 var stand2 = new player(cardTwo,1,"<img class='playericon' id ='two' src='../playerIcon/Playericon2.png'>");
 var dice = document.getElementById ('dice');
 var dice2 = document.getElementById('dice2');
