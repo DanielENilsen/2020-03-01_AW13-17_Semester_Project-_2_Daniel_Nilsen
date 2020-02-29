@@ -6,7 +6,7 @@ let disBtn = document.getElementById('disbnt');
 
 
 function DisplayWinner() {
-    winnertext.innerHTML += "<h1 class = 'winner'> and the winner are.....</h1>"   
+    winnertext.innerHTML += "<h1 class = 'winner'> and the winner is.....</h1>"   
     
     setTimeout(function() { 
         
